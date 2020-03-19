@@ -1,0 +1,60 @@
+/*general stylings plus nav*/
+*{margin: 0;
+}
+header,footer{
+    background:#36493f;
+}
+h1{
+    color:white;
+}
+.nav-search{
+    border-top:3px solid gray;
+}
+ul{
+    list-style: none;
+}
+li{
+    
+    padding:10px;
+    display:inline-block;
+}
+/*searchbar*/
+form{
+    margin-top:6px;
+    margin-right:5%;
+    float: right;
+}
+input{
+    padding:6px;
+    border:none;
+    background:#F2E8D0; 
+}
+button{
+    padding:6px;
+    margin:0;
+    border:none;
+    background:#F2E8D0;
+}
+/*nav styles*/
+ul li a{
+    padding:.65rem;
+    color:white;
+}
+ul li a:hover{
+    background:#F2E8D0;
+    color:#36493F;
+}
+main{
+    text-align: center;
+}
+main div{
+    background:#F2E8D0;  
+    padding: 5%;
+}
+p,h3{
+    margin:0% 0% 3% 0%;
+}
+
+.about{
+    background:#9b9381;   
+}
