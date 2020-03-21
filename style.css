@@ -89,9 +89,13 @@ nav{display:none;}
 }
 .side a{
     color:white;
-    margin:75px;
+    padding:50px;
     display:block;
     opacity: 100%;
+}
+.side a:hover{
+    background:#F2E8D0;
+    color:#36493F;
 }
 /*section stylings*/
 .about{
