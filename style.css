@@ -18,8 +18,38 @@ li{
     padding:10px;
     display:inline-block;
 }
+img{
+    
+    width:100px;
+}
+.image{
+    /*div settings*/
+    height: 450px;
+    /*image settings*/
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*header*/
+.site-title{
+    display:grid;
+    grid-template-columns: 100px auto auto;
+    grid-template-rows:auto auto auto;
+}
+.site-title img{
+    grid-row:1/ span 3;
+}
+.site-title h1{
+   grid-row: 2;
+   grid-column:2/ span 2;
+}
+.nav-search{
+    background:#36493f;
+}
 /*searchbar*/
 form{
+    
     margin-top:6px;
     margin-right:5%;
     float: right;
@@ -36,6 +66,9 @@ button{
     background:#F2E8D0;
 }
 /*nav styles*/
+nav{
+    display: none;
+}
 ul li a{
     padding:.65rem;
     color:white;
@@ -54,7 +87,39 @@ main div{
 p,h3{
     margin:0% 0% 3% 0%;
 }
-
+/*mobile menu*/
+.open{
+    margin:10px;
+    grid-column: 3;
+}
+/*section stylings*/
 .about{
     background:#9b9381;   
+}
+.imgabout{
+    background-image: url(images/GreyWolfintheforest\(1\).jpg);
+}
+.imgresearch{
+    background-image: url(images/Manedwolfbabyexamination\(1\).jpg);
+}
+.imgconservation{
+    background-image: url();
+}
+.imgdonations{
+    background-image: url(images/Wolfcoupleportraitinthewild.Natureeyeswolveswolfpackbeautifulanimalskillerspredatorshunterseyesgreywildernessoutdoorconcept.jpg);
+}
+.donate{
+background-image: url(images/Wolfhowling\(1\).jpg);
+}
+.donate-info{
+    position: relative;
+    top:270px;
+    right:5%;
+    height:60px;
+    width:100%;
+    background:orange;
+    opacity: 40%;
+}
+footer{
+    height:70px;
 }
