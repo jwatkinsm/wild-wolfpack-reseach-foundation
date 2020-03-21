@@ -12,7 +12,7 @@
         <img src="images/Project---Drawing-1.png">
         <h1>WILD WOLF-PACK RESEARCH FOUNDATION</h1>
         <span class="open">
-            <a>
+            <a href="#" onclick="openSide()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="27" viewBox="0 0 40 27">
                     <g transform="translate(0 1.5)">
                         <line x2="40" fill="none" stroke="#f2e8d0" stroke-width="3"/>
@@ -31,7 +31,7 @@
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>  
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li><a>About Us</a></li>
                     <li><a>Research</a></li>
@@ -41,6 +41,13 @@
                 </ul>
             </nav>
             
+        </div>
+        <div id="sidemenu" class="side menu">
+            <a>About Us</a>
+            <a>Research</a>
+            <a>Protection</a>
+            <a>Donations</a>
+            <a>Donate</a>
         </div>
     </header>
     <main>
@@ -90,5 +97,10 @@
             <a></a>
         </div>
     </footer>
+    <script>
+        function openSide(){
+            documnet.getelementById('sidemenu').style.width='250px';
+        }
+    </script>
 </body>
 </html>

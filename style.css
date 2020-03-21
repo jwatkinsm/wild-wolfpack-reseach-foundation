@@ -22,6 +22,16 @@ img{
     
     width:100px;
 }
+main{
+    text-align: center;
+}
+main div{
+    background:#F2E8D0;  
+    padding: 5%;
+}
+p,h3{
+    margin:0% 0% 3% 0%;
+}
 .image{
     /*div settings*/
     height: 450px;
@@ -51,8 +61,8 @@ img{
 form{
     
     margin-top:6px;
-    margin-right:5%;
-    float: right;
+    margin-left:5%;
+    float: left;
 }
 input{
     padding:6px;
@@ -65,32 +75,23 @@ button{
     border:none;
     background:#F2E8D0;
 }
-/*nav styles*/
-nav{
-    display: none;
-}
-ul li a{
-    padding:.65rem;
-    color:white;
-}
-ul li a:hover{
-    background:#F2E8D0;
-    color:#36493F;
-}
-main{
-    text-align: center;
-}
-main div{
-    background:#F2E8D0;  
-    padding: 5%;
-}
-p,h3{
-    margin:0% 0% 3% 0%;
-}
+
+nav{display:none;}
 /*mobile menu*/
 .open{
     margin:10px;
     grid-column: 3;
+}
+.side{position:absolute;
+    right:0px;
+    background:black;
+    opacity: 0.6;
+}
+.side a{
+    color:white;
+    margin:75px;
+    display:block;
+    opacity: 100%;
 }
 /*section stylings*/
 .about{
@@ -122,4 +123,28 @@ background-image: url(images/Wolfhowling\(1\).jpg);
 }
 footer{
     height:70px;
+}
+@media only screen and (min-width: 601px){
+    .open{display:none;}
+    /*searchbar*/
+form{
+    margin-right:10px;
+    float: right;
+}
+    /*nav styles*/
+    .side{
+        display:none;
+    }
+nav{
+    display: block;
+}
+ul li a{
+    padding:.65rem;
+    color:white;
+}
+ul li a:hover{
+    background:#F2E8D0;
+    color:#36493F;
+}
+
 }
