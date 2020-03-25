@@ -7,6 +7,16 @@ header,footer{
 h1{
     color:white;
 }
+h1,h3,a{
+    font-family: hobeaux, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+P{
+    font-family: source-serif-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .nav-search{
     border-top:3px solid gray;
 }
@@ -32,6 +42,9 @@ main div{
 p,h3{
     margin:0% 0% 3% 0%;
 }
+a{
+    text-decoration: none;
+}
 .image{
     /*div settings*/
     height: 450px;
@@ -53,6 +66,7 @@ p,h3{
 .site-title h1{
    grid-row: 2;
    grid-column:2/ span 2;
+   
 }
 .nav-search{
     background:#36493f;
@@ -78,18 +92,25 @@ button{
 
 nav{display:none;}
 /*mobile menu*/
-.open{
+.open, .close{
     margin:10px;
     grid-column: 3;
+    grid-row:1;
+}
+.close{
+    display:none;
 }
 .side{position:absolute;
     right:0px;
     background:black;
     opacity: 0.6;
+    width:0;
 }
 .side a{
     color:white;
-    padding:50px;
+    padding-top:40px;
+    padding-bottom:40px;
+    text-align: center;
     display:block;
     opacity: 100%;
 }
@@ -129,7 +150,7 @@ footer{
     height:70px;
 }
 @media only screen and (min-width: 601px){
-    .open{display:none;}
+    .open, .close{display:none;}
     /*searchbar*/
 form{
     margin-right:10px;
