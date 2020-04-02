@@ -7,7 +7,7 @@ header,footer{
 h1{
     color:white;
 }
-h1,h3,a{
+h1,h3,a, .donate-info button{
     font-family: hobeaux, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -59,6 +59,7 @@ a{
     display:grid;
     grid-template-columns: 100px auto auto;
     grid-template-rows:auto auto auto;
+    column-gap: 10px;
 }
 .site-title img{
     grid-row:1/ span 3;
@@ -89,7 +90,9 @@ button{
     border:none;
     background:#F2E8D0;
 }
-
+.donatebtn{
+    background:orange;
+}
 nav{display:none;}
 /*mobile menu*/
 .open, .close{
@@ -129,7 +132,7 @@ nav{display:none;}
     background-image: url(images/Manedwolfbabyexamination\(1\).jpg);
 }
 .imgconservation{
-    background-image: url();
+    background-image: url(images/wolfandfence.jpg);
 }
 .imgdonations{
     background-image: url(images/Wolfcoupleportraitinthewild.Natureeyeswolveswolfpackbeautifulanimalskillerspredatorshunterseyesgreywildernessoutdoorconcept.jpg);
@@ -141,13 +144,20 @@ background-image: url(images/Wolfhowling\(1\).jpg);
     position: relative;
     top:270px;
     right:5%;
-    height:60px;
+    height:90px;
     width:100%;
     background:orange;
-    opacity: 40%;
+    opacity: 60%;
 }
-.donate-info p, .donate-info button{
-    opacity:100%;
+.donate-info button{
+    background:#36493f;
+    color:white;
+    padding:10px;
+    letter-spacing: 1px;
+}
+.donate-info button:hover{
+    background:#9b9381;
+    color:black;
 }
 footer{
     height:70px;
@@ -177,6 +187,9 @@ ul li a{
 ul li a:hover{
     background:#F2E8D0;
     color:#36493F;
+}
+.donate-info{
+    height:60px;
 }
 footer p{
     padding:20px;
